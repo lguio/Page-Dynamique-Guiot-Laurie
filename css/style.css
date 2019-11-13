@@ -1,0 +1,201 @@
+body, html{
+    margin: 0px; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Code de la barre de navigation */
+
+nav{
+    padding: 0;
+    margin: 0;
+    height: 70px; 
+    width: 100%;
+    background-color: black;
+    float: right;
+    display: block;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.icon{
+    position: fixed;
+    left: 10px;
+    top: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.brand{
+    display:block;
+    margin:0 auto;
+    height:60px;
+}
+
+/* Fin code de la barre de navigation */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 20%; 
+    top: 50px;
+    background: red;
+    height: 1000px;
+    float: left;
+}
+
+
+.menu li{
+   list-style: none;
+}
+
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 15px; 
+    line-height: 120px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.menu li:hover{
+   background: black;
+   min-width: 250px;
+}
+
+.img{
+    display:block;
+    margin:0 auto;
+    height: 70px;
+    width: 70px;
+}
+
+.content {
+    background: white;
+    width: 80%;
+    float: left;
+    color: black;
+}
+
+.lead-img {
+    width: 100%;
+}
+
+/* Code du dropdown */ 
+
+.bouton{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    min-width: 170px;
+    cursor: pointer;
+}
+
+.bouton:hover{
+    background-color: red;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    top: -80%;
+}
+
+.drop-content {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    z-index: 1;
+}
+
+.drop-content a {
+    display: block;
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.drop-content a:hover {
+    background: red;
+}
+
+
+/* Fin code du dropdown*/ 
+
+.content p{
+    font-size: 15px;
+    font-family: poppins;
+    margin: 20px;
+}
+
+.content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-justify: auto;
+}
+
+.content h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+/* Code responsive */
+
+@media screen and (min-width: 900px){
+
+}
+
+@media screen and (max-width: 900px){
+
+}
+
+/* Fin code responsive */
+
+/* Code fadein et fadeout */
+
+#menu.clicked{
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    opacity: 0;
+}
+
+/* Fin code fadein et fadeout */
+
+/* Code du burger menu */
+
+.menu_on{
+   width: 20%;
+}
+
+.content_on{
+    width: 80%;
+}
+
+.content_off{
+    width: 80%;
+}
+
+.menu_off{
+    width: 0%;
+    height: 80%;
+}
+/* Fin code du burger menu */
